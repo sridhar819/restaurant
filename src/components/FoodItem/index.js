@@ -33,8 +33,13 @@ const FoodItem = ({details}) => {
         return (
           <li className="food-item">
             <div className="food-details">
-              <div className="dish-type">
-                <div></div>
+              <div
+                style={{borderColor: dishType === 2 ? 'green' : 'red'}}
+                className="dish-type"
+              >
+                <div style={{background: dishType === 2 ? 'green' : 'red'}}>
+                  <p className="d-none">dark</p>
+                </div>
               </div>
               <div className="details-card">
                 <h1>{dishName}</h1>

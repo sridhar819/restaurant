@@ -125,7 +125,6 @@ class Home extends Component {
   }
 
   render() {
-    const {restaurantName} = this.state
     return <div>{this.renderPageView()}</div>
   }
 }

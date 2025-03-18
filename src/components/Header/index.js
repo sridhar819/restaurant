@@ -9,9 +9,8 @@ const Header = props => {
       {value => {
         const {cartList} = value
 
-        const getCartCount = () => {
-          return cartList.reduce((sum, dish) => sum + dish.quantity, 0)
-        }
+        const getCartCount = () =>
+          cartList.reduce((sum, dish) => sum + dish.quantity, 0)
 
         return (
           <nav className="navbar">

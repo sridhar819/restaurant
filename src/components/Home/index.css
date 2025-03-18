@@ -1,0 +1,46 @@
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  overflow-x: auto;
+  padding: 10px 0px;
+}
+
+.menu-name {
+  width: 15%;
+}
+
+.menu-name button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  color: #777;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.active {
+  color: orange !important;
+  border-bottom: 2px outset #bfbfbf !important;
+}
+
+.loader {
+  display: grid;
+  place-items: center;
+  min-height: 40vh;
+}
+
+@media (max-width: 768px) {
+  .menu-name {
+    width: 40%;
+    min-width: 300px;
+  }
+}
+
+.food-list {
+  list-style: none;
+  padding: 10px;
+}

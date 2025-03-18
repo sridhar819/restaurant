@@ -1,0 +1,80 @@
+.food-item {
+  width: 100%;
+  border: 1px solid #bfbfbf;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.food-details {
+  display: flex;
+  width: 40%;
+  column-gap: 7px;
+}
+
+.dish-type {
+  border: 1px solid green;
+  height: 35px;
+  min-width: 35px;
+  display: grid;
+  place-items: center;
+}
+.dish-type > div {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.calory {
+  color: orange;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dish-image {
+  width: 130px;
+  height: 70%;
+}
+
+.dish-image img {
+  width: 100%;
+  max-height: 120px;
+  min-height: 120px;
+  border-radius: 10px;
+}
+
+.details-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-card h1 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+  color: #666;
+}
+
+.dish-des {
+  font-size: 12px;
+  color: #444;
+  font-weight: 400;
+}
+
+.custom {
+  color: blue;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+.details-card p {
+  margin: 0;
+}

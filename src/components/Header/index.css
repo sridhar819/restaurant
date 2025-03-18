@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 1rem;
+  border-bottom: 1px inset #bfbfbf;
+  align-items: center;
+}
+
+.nav-head {
+  font-size: 15px;
+  color: #413e3e;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.cart-icon p {
+  color: #555;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.count {
+  color: white;
+  background-color: orange;
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  padding: 4px;
+  border-radius: 50%;
+}

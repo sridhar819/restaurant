@@ -1,4 +1,5 @@
 import {IoCart} from 'react-icons/io5'
+import {Link} from 'react-router-dom'
 import CartContext from '../../CartContext'
 import './index.css'
 
@@ -9,19 +10,21 @@ const Header = props => {
       {value => {
         const {cartList} = value
 
-        const getCartCount = () =>
-          cartList.reduce((sum, dish) => sum + dish.quantity, 0)
+        const getCartCount = cartList.length
 
         return (
           <nav className="navbar">
-            <h1 className="nav-head">{restaurantName}</h1>
-            <div className="cart-icon">
+            <Link to="/">
+              <h1 className="nav-head">{restaurantName}</h1>
+            </Link>
+            <Link to="/cart" className="cart-icon">
               <p className="d-none d-md-block mt-3">My Orders</p>
-              <div className="nav-cart">
+
+              <button type="button" data-testid="cart" className="nav-cart">
                 <IoCart size={23} />
-                <p className="count">{getCartCount()}</p>
-              </div>
-            </div>
+                <p className="count">{getCartCount}</p>
+              </button>
+            </Link>
           </nav>
         )
       }}

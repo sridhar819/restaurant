@@ -2,6 +2,7 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import FoodItem from '../FoodItem'
 import Header from '../Header'
+import CartContext from '../../CartContext'
 import './index.css'
 
 const stagesList = {
@@ -125,7 +126,18 @@ class Home extends Component {
   }
 
   render() {
-    return <div>{this.renderPageView()}</div>
+    const {restaurantName} = this.state
+    return (
+      <CartContext.Consumer>
+        {value => {
+          const {addAppName} = value
+
+          addAppName(restaurantName)
+
+          return <div>{this.renderPageView()}</div>
+        }}
+      </CartContext.Consumer>
+    )
   }
 }
 
